@@ -41,8 +41,7 @@ recursive_check: if true, the check will be done recursively
 
 This is an example of a python post-script to use with Elkarbackup
 
------------------
-
+```
 #!/usr/bin/python
 
 import sys
@@ -60,3 +59,4 @@ myfolder = BackupFolder(PATH, [{'extension':".bak",'include_text_in_name':'SAGE'
 
 myfolder.check_folder()
 
+```
