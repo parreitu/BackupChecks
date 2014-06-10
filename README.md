@@ -27,9 +27,7 @@ myfolder.check_folder()
 
 path: is the path of the folder that we want to check
 
-check_extensions: is a list of dictionaries, whereas each dictionary gives information about the validation to make for files of one expecific 
-
-extension. The keys of the dictionary may be:
+check_extensions: is a list of dictionaries, whereas each dictionary gives information about the validation to make for files of one expecific extension. The keys of the dictionary may be:
     
 - extension: the extension to check
 
