@@ -11,7 +11,8 @@ In backupfilecontrol.py you have to change the values of EMAIL_FROM and EMAIL_TO
 
 
 
-```minimum_size = 50 
+```
+minimum_size = 50 
 maximum_days = 5   # If the file would have more than 5 days, it would be to old
 recursive = False 
 path = "/media/Backups/elkarbackup/0003/0012/Daily.0/home"
