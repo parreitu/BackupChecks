@@ -41,3 +41,27 @@ check_extensions: is a list of dictionaries, whereas each dictionary gives infor
 
 - include_text_in_name: By default not checked. You can use this if you want only check files that have some test in their name.
 recursive_check: if true, the check will be done recursively
+
+-----------------
+
+This is an example of a python post-script to use with Elkarbackup
+
+-----------------
+
+#!/usr/bin/python
+
+import sys
+import os, os.path
+
+sys.path.append('/root/scripts/python/backupchecks')
+
+from backupfilecontrol import BackupFile, BackupFolder
+
+ELKARBACKUP_PATH =  os.environ.get('ELKARBACKUP_PATH')
+PATH = ELKARBACKUP_PATH+"/Daily.0"
+RECURSIVE = False
+
+myfolder = BackupFolder(PATH, [{'extension':".bak",'include_text_in_name':'SAGE','maximum_days':5, 'minimum_size_mb':2500}], RECURSIVE)
+
+myfolder.check_folder()
+
