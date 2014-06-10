@@ -7,6 +7,8 @@ Here you have some examples to know how to use.
 
 I will use this as post-scritp in Elkarbackup: https://github.com/elkarbackup/elkarbackup
 
+In backupfilecontrol.py you have to change the values of EMAIL_FROM and EMAIL_TO variables, and in the sendmail.py you have to change the value of DEFAULT_SMTP variable.
+
 ---------
 
  minimum_size = 50 
