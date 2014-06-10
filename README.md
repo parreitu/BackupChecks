@@ -21,7 +21,7 @@ myfolder = BackupFolder(path, [{'extension':".bak",'include_text_in_name':'MYDB'
 
 myfolder = BackupFolder(path, [{'extension':".bak",'maximum_days':maximum_days, 'minimum_size_mb':minimum_size}], recursive)
 
-myfolder = BackupFolder(path, [{'extension':".bz2", 'minimum_size':50, 'minimum_files_number':2 }], recursive)
+myfolder = BackupFolder(path, [{'extension':".bz2", 'minimum_size':50, 'minimum_files_number':2 }, {'extension':".bak", 'minimum_size':150, 'include_text_in_name':'MYDB'}], recursive)
 
 myfolder.check_folder()
 
