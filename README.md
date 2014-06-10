@@ -7,6 +7,8 @@ Here you have some examples to know how to use.
 
 I will use this as post-scritp in Elkarbackup: https://github.com/elkarbackup/elkarbackup
 
+---------
+
 minimum_size = 50 
 maximum_days = 5 # If the file would have more than 5 days, it would be to old
 recursive = False 
