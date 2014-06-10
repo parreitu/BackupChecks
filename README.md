@@ -38,6 +38,6 @@ extension. The keys of the dictionary may be:
 - minimum_size_mb: if one file is smaller than this vale, it would be considered as error. Default 5MB
 
 - minimum_files_number: There may exists at least this number of files for this extension. Otherwise, it would be considerer as error. Default 1 file
--
-include_text_in_name: By default not checked. You can use this if you want only check files that have some test in their name.
+
+- include_text_in_name: By default not checked. You can use this if you want only check files that have some test in their name.
 recursive_check: if true, the check will be done recursively
